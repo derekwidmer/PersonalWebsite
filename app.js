@@ -8,3 +8,6 @@ const port = process.env.PORT
 app.listen(port, (req, res) => {
     console.log(`Listening on port ${port}...`)
 })
+
+
+console.log('WOAH!')
