@@ -9,9 +9,21 @@ h1,h2,h3,h4,h5,h6,p {
 
 img {
     max-width: auto !important;
-    max-height: 500px !important;
+    max-height: 400px !important;
 }
 
 .navbar-dark {
     background-color: rgb(33, 38, 58) !important;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+svg {
+    filter: invert(1)
+}
+
+.link-icon {
+    margin: 0 10px;
 }
