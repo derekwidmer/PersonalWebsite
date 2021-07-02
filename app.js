@@ -1,13 +1,19 @@
 require('dotenv').config()
 
+const path = require('path')
+
 const express = require('express')
 const app = express()
 
-const port = process.env.PORT
+app.set('views', path.join(__dirname, 'views'))
+app.set('view engine', 'ejs')
 
+
+app.get('/', (req, res) => {
+    res.render('home')
+})
+
+const port = process.env.PORT
 app.listen(port, (req, res) => {
     console.log(`Listening on port ${port}...`)
 })
-
-
-console.log('WOAH!')
