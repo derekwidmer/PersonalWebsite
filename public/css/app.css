@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(19, 19, 19);
+    background-color: rgb(33, 38, 58);
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 
@@ -13,5 +13,5 @@ img {
 }
 
 .navbar-dark {
-    background-color: black !important;
+    background-color: rgb(33, 38, 58) !important;
 }
