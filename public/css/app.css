@@ -1,12 +1,17 @@
 body {
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(19, 19, 19);
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 
-/* h1,h2,h3,h4,h5,h6,p {
-    color:
-} */
+h1,h2,h3,h4,h5,h6,p {
+    color: rgb(243, 243, 243);
+}
 
 img {
-    height: 400px !important;
-    width: auto;
+    max-width: auto !important;
+    max-height: 500px !important;
+}
+
+.navbar-dark {
+    background-color: black !important;
 }
