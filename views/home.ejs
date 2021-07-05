@@ -1,20 +1,76 @@
 <% layout('layouts/boilerplate') %>
 
 <div class="container d-flex flex-column">
+    <!-- Intro section -->
     <div class="row mb-md-3">
-        <div class="col-lg-8 offset-lg-2">
+        <div class="col-lg-6 offset-lg-3">
             <div class="row mx-auto">
                 <div class="col-md-auto col-12">
                     <div class="d-flex justify-content-center">
                         <img class="img-fluid rounded-3" src="image/20210613_113112.jpeg" alt="">
                     </div>
                 </div>
-                <div class="col mt-3 d-flex flex-column justify-content-center">
-                    <p class="h1">DEREK WIDMER</p>
-                    <%- include('partials/personal-desc') %>
+                <div class="col mt-3 d-flex flex-column justify-content-center align-items-end">
+                    <p class="h3 mb-0">Hi, I'm</p>
+                    <h1 class="mb-0">Derek Widmer</h1>
+                    <p>A Full-Stack Web Developer</p>
                 </div>
             </div>
         </div>
     </div>
+    <div id="about" class="spacer"></div>
+    <!-- About section -->
+    <div class="row mb-md-3">
+        <div class="col-lg-8 offset-lg-2">
+            <h2 class="text-center mb-3">About Me</h2>
+            <%- include('partials/personal-desc') %>
+        </div>
+    </div>
+    <div id="portfolio" class="spacer"></div>
+    <!-- Portfolio section -->
+    <div class="row mb-md-3">
+        <div class="col-lg-8 offset-lg-2">
+            <h2 class="text-center">My Portfolio</h2>
+            <div class="rounded-3 p-3 mt-3 project-div">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="site-img d-flex justify-content-center rounded-3 overflow-hidden">
+                            <img src="image/yelpcamp.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex flex-column justify-content-center">
+                        <div class="d-flex align-items-center mt-3">
+                            <img class="mb-1 me-2" src="image/yelpcamp-icon.png" alt="" width="35" height="35">
+                            <a class="text-decoration-none site-link" href="https://yelpcamp-dwidmer.herokuapp.com"
+                                target="_blank">
+                                <h1>YelpCamp</h1>
+                            </a>
+                        </div>
 
+                        <p>This is a project I worked on as a part of the Colt Steele Web Developer Bootcamp
+                            course. It
+                            helped form my base for Node development, as well as expanded my knowledge of
+                            Express and
+                            MongoDB. The site is fully functioning on the front and back-end. Feel free to give
+                            it a try!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                const card = document.querySelector(".site-img")
+                const mainLink = document.querySelector('.site-link')
+
+                card.addEventListener("click", handleClick)
+
+                function handleClick(event) {
+                    const isTextSelected = window.getSelection().toString();
+                    if (!isTextSelected) {
+                        mainLink.click();
+                    }
+                }
+            </script>
+        </div>
+    </div>
 </div>
