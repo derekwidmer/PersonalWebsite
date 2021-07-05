@@ -31,7 +31,6 @@ svg {
 .site-img {
     height: 240px;
     width: auto;
-    cursor: pointer;
 }
 
 .site-link h1:hover {
@@ -41,6 +40,7 @@ svg {
 .project-div {
     background-color: rgb(29, 34, 53);
     transition: all 0.25s ease-in-out;
+    cursor: pointer;
 }
 
 .project-div:hover {
@@ -48,7 +48,7 @@ svg {
     transform: translateY(-5px);
 }
 .spacer {
-    height: 100px;
+    height: 80px;
 }
 
 .intro-section {
