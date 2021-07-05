@@ -52,8 +52,10 @@
                     }
                 });
                 var scrollInd = document.querySelector('.hideme')
-                setTimeout(scrollInd.animate({ 'opacity': '0' }, 1000), 2500)
-                scrollInd.remove()
+                if (scrollInd) {
+                    setTimeout(scrollInd.animate({ 'opacity': '0' }, 1000), 2500)
+                    scrollInd.remove()
+                }
             });
         });
     </script>
