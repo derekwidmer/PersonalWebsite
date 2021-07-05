@@ -42,6 +42,14 @@
     </script>
     <script>
         $(document).ready(function () {
+            $('.splash p').each(function (i) {
+                $(this).delay(250).animate({ 'opacity': '1' }, 1000)
+            })
+            $('.splash img').animate({ 'opacity': '1' }, 1000)
+        })
+    </script>
+    <script>
+        $(document).ready(function () {
             $(window).scroll(function () {
                 $('.fadein').each(function (i) {
                     var bottom_of_object = $(this).position().top + $(this).outerHeight();
