@@ -37,13 +37,13 @@ svg {
     color:cornflowerblue !important;
 }
 
-.project-div {
+.project-card {
     background-color: rgb(29, 34, 53);
     transition: all 0.25s ease-in-out;
     cursor: pointer;
 }
 
-.project-div:hover {
+.project-card:hover {
     /* box-shadow: 1px 3px 1px 1px rgba(0, 0, 0, 0.1); */
     transform: translateY(-5px);
 }

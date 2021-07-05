@@ -1,29 +1,50 @@
 <div class="row mb-md-3 fadein">
     <div class="col-lg-8 offset-lg-2">
         <h2 class="text-center">My Portfolio</h2>
-        <div class="rounded-3 p-3 mt-3 project-div">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="site-img d-flex justify-content-center rounded-3 overflow-hidden">
-                        <img src="image/yelpcamp.png" alt="">
-                    </div>
+        <!-- YelpCamp Card -->
+        <div class="rounded-3 p-3 mt-3 project-card">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <div class="d-flex align-items-center">
+                    <img class="mb-1 me-2" src="image/yelpcamp-icon.png" alt="" width="35" height="35">
+                    <a class="btn" data-bs-toggle="collapse" href="#yelpCampCollapse" role="button">
+                        <h1>YelpCamp</h1>
+                    </a>
                 </div>
-                <div class="col-md-6 d-flex flex-column justify-content-center">
-                    <div class="d-flex align-items-center mt-3">
-                        <img class="mb-1 me-2" src="image/yelpcamp-icon.png" alt="" width="35" height="35">
-                        <a class="text-decoration-none site-link" href="https://yelpcamp-dwidmer.herokuapp.com"
-                            target="_blank">
-                            <h1>YelpCamp</h1>
-                        </a>
+                <div class="collapse" id="yelpCampCollapse">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="p-3">
+                                This is a project I worked on as a part of the Colt Steele Web Developer
+                                Bootcamp course. It helped form my base for Node development, as well as expanded my
+                                knowledge of Express and MongoDB. The site is fully functioning on the front and
+                                back-end. Feel free to give it a try!
+                                <br>
+                                Note: Map functionality does not display on Safari. Use Chrome, Firefox,
+                                Edge, etc. for full function.
+                            </p>
+                        </div>
+                        <div class="col-12 d-flex justify-content-center">
+                            <a class="btn btn-primary" href="https://yelpcamp-dwidmer.herokuapp.com" target="_blank">
+                                Visit YelpCamp
+                            </a>
+                        </div>
                     </div>
-                    <p>This is a project I worked on as a part of the Colt Steele Web Developer Bootcamp
-                        course. It helped form my base for Node development, as well as expanded my knowledge of
-                        Express and MongoDB. The site is fully functioning on the front and back-end. Feel free to give
-                        it a try! Note: Map functionality does not display on safari. Use Chrome, Firefox, Edge, etc.
-                        for full function.
-                    </p>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    const card = document.querySelector(".project-card")
+    const mainLink = document.querySelector('.site-link')
+
+    card.addEventListener("click", handleClick)
+
+    function handleClick(event) {
+        const isTextSelected = window.getSelection().toString();
+        if (!isTextSelected) {
+            mainLink.click();
+        }
+    }
+</script>
