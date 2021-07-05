@@ -27,3 +27,23 @@ svg {
 .link-icon {
     margin: 0 10px;
 }
+
+.site-img {
+    height: 240px;
+    width: auto;
+    cursor: pointer;
+}
+
+.site-link h1:hover {
+    color:cornflowerblue !important;
+}
+
+.project-div {
+    background-color: rgb(29, 34, 53);
+    transition: all 0.25s ease-in-out;
+}
+
+.project-div:hover {
+    /* box-shadow: 1px 3px 1px 1px rgba(0, 0, 0, 0.1); */
+    transform: translateY(-5px);
+}
