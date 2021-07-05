@@ -50,3 +50,15 @@ svg {
 .spacer {
     height: 100px;
 }
+
+.fadein {
+    opacity: 0;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.hideme {
+    height: 100%;
+}
