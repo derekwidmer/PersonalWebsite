@@ -69,3 +69,19 @@ a:hover {
 .splash {
     height: 80vh;
 }
+
+.tech-icon {
+    width:64px;
+    height:64px;
+}
+
+.tech-icon-black {
+    filter: invert(1);
+}
+
+.tech-container {
+    margin: 8px 8px;
+    padding: 8px;
+    background-color: rgb(29, 34, 53);
+    border-radius: 50%;
+}
