@@ -85,3 +85,9 @@ a:hover {
     background-color: rgb(29, 34, 53);
     border-radius: 50%;
 }
+
+.intro-link-icon{
+    height: 30px;
+    width: 30px;
+    filter: invert(1);
+}
